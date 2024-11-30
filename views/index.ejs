@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link href="/css/output.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-2.24.1.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body class="bg-gradient-to-b from-blue-800 to-blue-500 text-white">
+    <header class="text-center py-5">
+        <h1 class="text-4xl font-bold"><%= title %></h1>
+        <p class="text-lg mt-2">Interactive Visualizations for Big Data</p>
+    </header>
+    <main class="container mx-auto px-5">
+        <section id="plotly-visualization" class="my-10">
+            <h2 class="text-2xl font-semibold mb-3">Plotly Visualization</h2>
+            <div id="plotly-chart" style="width:100%; height:400px;"></div>
+        </section>
+        <section id="d3-visualization" class="my-10">
+            <h2 class="text-2xl font-semibold mb-3">D3.js Visualization</h2>
+            <svg id="d3-chart" width="800" height="400"></svg>
+        </section>
+    </main>
+    <footer class="text-center py-5">
+        <p>&copy; 2024 BDVA Project. All Rights Reserved.</p>
+    </footer>
+    <script src="/js/visualizations.js"></script>
+</body>
+</html>
